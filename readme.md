@@ -17,15 +17,15 @@ Please note that this API contains unmarked spoilers about the series (specifica
 
 ### Get a list of all the District Games Victors
 
-`api/district_victors`
+`api/district_games_victors`
 
 ### Return information about a specific District Games Victor
 
-`api/district_victor/:id`
+`api/district_games_victor/:id`
 
 Returns information about a specific District Games Victor, given their home district and gender abbreviation.
 
-For example, `api/district_victor/2f` returns:
+For example, `api/district_games_victor/2f` returns:
 
 ```
 {
