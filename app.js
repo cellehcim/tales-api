@@ -9,7 +9,10 @@ const cors = require("cors");
 app.use(cors());
 
 app.get('/', (req, res) => {
-  res.send("Hello World!");
+  res.send("<h1>Unofficial Tales of the Hunger Games API</h1>" + 
+    "If you're new to this API, please read the " +
+    "<a href='https://github.com/cellehcim/tales-api/blob/main/readme.md'>documentation</a> here!"
+    );
   })
 
 app.get('/api/district_games_victors', getAllDistrictVictors);
