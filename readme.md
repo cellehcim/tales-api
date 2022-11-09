@@ -61,7 +61,7 @@ Notes
 
 ### Return the Grand Final Victor 
 
-`api/district_victor`
+`api/district_games_victor`
 
 Returns information about the District Games Victor who won the Grand Final. 
 
