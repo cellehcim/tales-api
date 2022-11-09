@@ -1,15 +1,15 @@
 # Tales of the Hunger Games [District Hunger Games] API
 
-This is a custom-written API based on Tales of the Hunger Games.
+This is a custom-written API based on `Tales of the Hunger Games`, a Hunger Games fanfiction by Christian Blanco.
 
-It's powered by Node.js. The data comes from what was picked up from watching the series Christian Blanco, but also used the [HUngergamestales Wiki](https://hungergamestales.fandom.com/wiki/HUngergamestales_Wiki), [Khen Siapco's tribute list](m/spreadsheets/d/1A4_ryLpuz5rJIEfPzbYad3QqHS_GuGY06Aoz2YskBYo/edit#gid=0), and a few of Solaro's YouTube comments that rank District Hunger Games tributes (including cause of death), to accelerate the corresponding data entry. 
+It's powered by Node.js. The data comes from what was picked up from watching the series, but also used the [HUngergamestales Wiki](https://hungergamestales.fandom.com/wiki/HUngergamestales_Wiki), [Khen Siapco's tribute list](m/spreadsheets/d/1A4_ryLpuz5rJIEfPzbYad3QqHS_GuGY06Aoz2YskBYo/edit#gid=0), and a few of Solaro's YouTube comments that rank District Hunger Games tributes (including cause of death), to accelerate the corresponding data entry. 
 
 Please note that this API contains unmarked spoilers about the series (specifically about who won each District Games and their placing in the Grand Final). User discretion is advised.
 
 ## What is *Tales of the Hunger Games* ("*Tales*")?
 
 * *Tales* is a Hunger Games YouTube series by [Christian Blanco](https://www.youtube.com/channel/UCAkhWuczWzB3t7h8Xo5_S9g) that chronicles the seventy-three children who won the Hunger Games before Katniss and Peeta.
-* *Tales* also includes a storyline twelve years after Mockingjay’s conclusion where pro-Capitol supporters retake Panem and reinstate the Hunger Games. President Paylor and five of the seven surviving canon Victors die in this universe. 
+* *Tales* also includes a storyline twelve years after *Mockingjay*’s conclusion where pro-Capitol supporters retake Panem and reinstate the Hunger Games. President Paylor and five of the seven surviving canon Victors die in this universe. 
 * Panem's new leader also replaces the “Quarter Quell” with a “Quinquennal Quell” that occurs every five years instead of twenty-five like in the canon. Past iterations include reaping the descendents of Victors (and their siblings), making a reaped tribute name their district partner, reaping the tributes in secret, and connecting each pair of reaped tributes to each other. 
 * The 100th Hunger Games’ twist reaps sixteen tributes from each district. Like in the past ninety-nine Hunger Games, they fight each other but until one male tribute and one female tribute remains. However, those two “victors” become tributes for a “grand final” that would happen two weeks after District 1’s 100th Hunger Games. This is what the API info is currently based on. 
 
