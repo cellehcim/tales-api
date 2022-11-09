@@ -4,7 +4,7 @@ var data = fs.readFileSync('data.json');
 var items = JSON.parse(data);
 const express = require("express");
 const app = express();
-const port = 8000
+const port = process.env.PORT
 
 const cors = require("cors");
 
