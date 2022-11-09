@@ -4,7 +4,6 @@ var data = fs.readFileSync('data.json');
 var items = JSON.parse(data);
 const express = require("express");
 const app = express();
-const port = process.env.PORT
 
 const cors = require("cors");
 app.use(cors());
@@ -36,5 +35,5 @@ function getTriticaMacDonaldsInfo(req, res) {
   res.send(items["district_victors"]["9f"]);
 }
 
-app.listen(port,
-    () => console.log('Server start at port ' + port));
+app.listen(process.env.PORT || 3000,
+    () => console.log('Server started!'));
