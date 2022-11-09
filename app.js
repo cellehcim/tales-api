@@ -15,9 +15,27 @@ app.get('/', (req, res) => {
     );
   })
 
+app.get('/api/victors', getAllVictors);
+app.get('/api/victor/:id', getSpecificVictor);
+
 app.get('/api/district_games_victors', getAllDistrictVictors);
 app.get('/api/district_games_victor/:id', getSpecificDistrictVictor);
-app.get('/api/district_games_victor', getTriticaMacDonaldsInfo)
+app.get('/api/district_games_victor', getTriticaMacDonaldsInfo);
+
+function getAllVictors(req, res) {
+  res.send(items["victors"])
+}
+
+function getSpecificVictor(req, res) {
+  var search = req.params.id
+
+  if (items["victors"][search]) {
+    res.send(items["victors"][search]);
+  } else {
+    return res.status(404).json({"error": "Not found. Please check that you entered in a year between 1 and 100."});
+  }
+
+}
 
 function getAllDistrictVictors(req, res) {
   res.send(items["district_victors"]);
