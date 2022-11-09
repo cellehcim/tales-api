@@ -1,10 +1,13 @@
-# Tales of the Hunger Games [District Hunger Games] API
+# Tales of the Hunger Games API
 
-This is a custom-written API based on `Tales of the Hunger Games`, a Hunger Games fanfiction by Christian Blanco.
+This is a custom-written API based on *Tales of the Hunger Games*, a *Hunger Games* fanfiction by Christian Blanco.
 
 It's hosted through Heroku and powered by Node.js. The data comes from what was picked up from watching the series, but also used the [HUngergamestales Wiki](https://hungergamestales.fandom.com/wiki/HUngergamestales_Wiki), [Khen Siapco's tribute list](m/spreadsheets/d/1A4_ryLpuz5rJIEfPzbYad3QqHS_GuGY06Aoz2YskBYo/edit#gid=0), and a few of Solaro's YouTube comments that rank District Hunger Games tributes (including cause of death), to accelerate the corresponding data entry. 
 
-Please note that this API contains unmarked spoilers about the series (specifically about who won each District Games and their placing in the Grand Final). User (and reader!) discretion is advised.
+Please note that:
+1. I do not own *The Hunger Games* nor *Tales of the Hunger Games*. They're owned by both Suzanne Collins and Christian Blanco, respectively.
+2. This API contains unmarked spoilers about the series (specifically about who won each District Games and their placing in the Grand Final). User (and reader!) discretion is advised.
+
 
 ## What is *Tales of the Hunger Games* ("*Tales*")?
 
@@ -14,6 +17,38 @@ Please note that this API contains unmarked spoilers about the series (specifica
 * The 100th Hunger Games’ twist reaps sixteen tributes from each district. Like in the past ninety-nine Hunger Games, they fight each other but until one male tribute and one female tribute remains. However, those two “victors” become tributes for a “grand final” that would happen two weeks after District 1’s 100th Hunger Games. This is what the API info is currently based on. 
 
 ## Endpoints
+
+### Get a list of all the Hunger Games Victors
+
+`api/victors`
+
+### Get a list of all the Hunger Games Victors
+
+`api/victor/:id`
+
+For example, `api/victor/1` returns:
+
+```
+{
+"id": 1,
+"first_name": "Cassius",
+"last_name": "Heath",
+"gender": "male",
+"age": 16,
+"district": 2,
+"sustained_injuries": null,
+"weapon_of_choice": "Weaponry (swords)",
+"known_kills": ["Lilana (11F)", "Bruce (12M)", "Elektra (3F)", "Loom (8F)", "Unmentioned tribute", "Unmentioned tribute", "Unmentioned tribute", "Unmentioned tribute"],
+"nickname": null,
+"is_third_quarter_quell_tribute": false,
+"third_quarter_quell_kills": null,
+"alive_by_third_quarter_quell": false,
+"alive_by_the_end_of_mockingjay": false,
+"alive_after_the_reclamation": false,
+"alive_by_series_end": false,
+"arena": 1
+}
+```
 
 ### Get a list of all the District Games Victors
 
