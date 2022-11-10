@@ -26,6 +26,8 @@ Please note that:
 
 `api/victor/:id`
 
+Returns information of a specific Hunger Games Victor, given the corresponding Hunger Games year (from 1-74 and 76-100). This API does not consider Irena al-Fayed, 
+
 For example, `api/victor/1` returns:
 
 ```
@@ -46,9 +48,26 @@ For example, `api/victor/1` returns:
 "alive_by_the_end_of_mockingjay": false,
 "alive_after_the_reclamation": false,
 "alive_by_series_end": false,
-"arena": 1
 }
 ```
+
+Where:
+* `id` (integer) - The Victor's ID, typically the Hunger Games iteration they won. For Katniss and Peeta, the corresponding IDs will be 74 and 75 respectively.
+* `first_name` (string) - the Victor's first name.
+* `last_name` (string) - the Victor's last name.
+* `gender` (string) - the Victor's gender.
+* `age` (integer) - the age the Victor won their Hunger Games at.
+* `district` (integer) - the Victor's home district.
+* `sustained_injuries` (string) - any permanent injuries that the Victor sustained that weren't healed for any reason. This value is null if the Victor does not have any of those sustained injuries. 
+* `weapon_of_choice` (string) - the Victor's primary strategy for winning the Hunger Games.
+* `known_kills` (array of strings) - a list of known tributes the Victor killed during their time in the arena. 
+* `nickname` (string) - the Victor's in-universe nickname given by the Capitol or the Districts.
+* `is_third_quarter_quell_tribute` (boolean) - whether the Victor was named tribute for the 75th Hunger Games.
+* `third_quarter_quell_kills` (array of integers) - a list of known tributes (given by their API IDs) the Victor killed during the 75th Hunger Games arena. This value is set to null if the Victor did not participate in the 75th Hunger Games. 
+* `alive_by_third_quarter_quell` (boolean) - whether the Victor was alive by the 3rd Quarter Quell, according to the reaping visuals from Christian's video on the 75th Hunger Games. 
+* `alive_by_the_end_of_mockingjay` (boolan) - whether the Victor was alive by the conclusion of *Mockingjay*. This includes Victors who were in hiding when President Coin made seven Victors vote on whether there should be a Capitol Hunger Games. 
+* `alive_after_the_reclamation"` (boolean) - whether the Victor was alive following the 76th Hunger Games (and to some extent, after Capitol supporters retake Panem). 
+* `alive_by_100th_games` (boolean) - whether the Victor was alive at the time of the 100th Hunger Games's announcement.
 
 ### Get a list of all the District Games Victors
 
@@ -84,15 +103,30 @@ For example, `api/district_games_victor/2f` returns:
   "grand_final_kills": ["10m", "8m", "5f", "9m", "6f", "11f"],  
   "grand_final_place": 10,
   "killed_by": "11m",
-  "arena_id": 2
 }
 ```
 
-Notes
-* `height` and `weight` are given in inches and pounds respectively. 
-* `nickname` is the nickname officially given by the Capitol. It does not consider fan-given nicknames.
-* `grand_final_kills` and `killed_by` use IDs of the mentioned tributes.
-
+Where:
+* `id` (string) - The District Victor's id.
+* `first_name` (string) - the District Victor's first name.
+* `last_name` (string) - the District Victor's last name.
+* `gender` (string) - the District Victor's gender.
+* `age` (integer) - the age the District Victor won their Hunger Games at.
+* `district` (integer) - the District Victor's home district.
+* `height` (integer) - the District Victor's height in inches according to the District Victor spreadsheet Christian provided after each video.
+* `weight` (integer) - the District Victor's weight in pounds according to the District Victor spreadsheet Christian provided after each video.
+* `sustained_injuries` (string) - any permanent injuries that the District Victor sustained that weren't healed for any reason, according to the District Victor spreadsheet Christian provided after each video. This value is null if the District Victor does not have any of those sustained injuries. 
+* `weapon_of_choice` (string) - the Victor's primary strategy for winning the Hunger Games according to the District Victor spreadsheet Christian provided after each video.
+* `nickname` (string) - the Victor's in-universe nickname given by the Capitol or the Districts.
+* `eugenia_assessment_score` (integer between 0-8) - The District Victor's interview score as given by Eugenia Ravinstill.
+* `rubius_assessment_score"` (integer between 0-8) - The District Victor's interview score as given by Rubius Dalton.
+* `artulia_assessment_score"` (integer between 0-8) - The District Victor's interview score as given by Artulia Fling.
+* `overall_assessment_score"` (integer between 0-8) - The District Victor's overall interview score after averaging Eugenia, Rubius, and Arulia's scores and rounding that average down to the nearest integer.
+* `district_games_direct_kills` (array of strings) - all tributes the Victor directly killed during their time in the arena.
+* `district_games_indirect_kills` (array of strings) - all tributes the Victor indirectly killed during their time in the arena. 
+* `grand_final_kills` (array of strings) - all District Victor IDs belonging to other District Victors the District Victor killed during the Grand Final. 
+*  `grand_final_place` (integer between 1-24) - The District Victor's place in the Grand Final,
+*  `killed_by` (string) - The ID of the District Victor who kills this District Victor. This value is null for the winner of the Grand Final
 
 ### Return the Grand Final Victor 
 
@@ -102,6 +136,6 @@ Returns information about the District Games Victor who won the Grand Final.
 
 ## Future plans
 
-* Catalog the remaining Hunger Games Victors in the series and design the corresponding endpoints.
+* Catalog the remaining Hunger Games Victors in the series.
 * Catalog other District Hunger Games information and design the corresponding endpoints.
 * Extend the API data to other fan-made continuations of the series such as Panem Reborn and After the 100th.
