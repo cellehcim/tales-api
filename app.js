@@ -29,10 +29,12 @@ function getAllVictors(req, res) {
 function getSpecificVictor(req, res) {
   var search = req.params.id
 
-  if (items["victors"][search]) {
+  if (search == "75") {
+    return res.status(404).json({"error": "The 75th Hunger Games does not have a Victor because the Games ended prematurely."});
+  } else if (items["victors"][search]) {
     res.send(items["victors"][search]);
   } else {
-    return res.status(404).json({"error": "Not found. Please check that you entered in a year between 1 and 100."});
+    return res.status(404).json({"error": "Not found. Please check that you entered in a year between either 1-74 or 76-100."});
   }
 
 }
