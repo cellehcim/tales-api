@@ -26,7 +26,7 @@ Please note that:
 
 `api/victor/:id`
 
-Returns information of a specific Hunger Games Victor, given the corresponding Hunger Games year (from 1-74 and 76-100). This API does not consider Irena al-Fayed, 
+Returns information of a specific Hunger Games Victor, given the corresponding Hunger Games year (from 1-74 and 76-100). This API does not consider Irene al-Fayed despite being a Capitol Hunger Games Victor.
 
 For example, `api/victor/1` returns:
 
@@ -47,7 +47,7 @@ For example, `api/victor/1` returns:
 "alive_by_third_quarter_quell": false,
 "alive_by_the_end_of_mockingjay": false,
 "alive_after_the_reclamation": false,
-"alive_by_series_end": false,
+"alive_by_the_100th_games": false,
 }
 ```
 
@@ -67,7 +67,7 @@ Where:
 * `alive_by_third_quarter_quell` (boolean) - whether the Victor was alive by the 3rd Quarter Quell, according to the reaping visuals from Christian's video on the 75th Hunger Games. 
 * `alive_by_the_end_of_mockingjay` (boolan) - whether the Victor was alive by the conclusion of *Mockingjay*. This includes Victors who were in hiding when President Coin made seven Victors vote on whether there should be a Capitol Hunger Games. 
 * `alive_after_the_reclamation"` (boolean) - whether the Victor was alive following the 76th Hunger Games (and to some extent, after Capitol supporters retake Panem). 
-* `alive_by_100th_games` (boolean) - whether the Victor was alive at the time of the 100th Hunger Games's announcement.
+* `alive_by_the_100th_games` (boolean) - whether the Victor was alive at the time of the 100th Hunger Games's announcement.
 
 ### Get a list of all the District Games Victors
 
