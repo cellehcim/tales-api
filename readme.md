@@ -2,7 +2,7 @@
 
 This is a custom-written API based on *Tales of the Hunger Games*, a *Hunger Games* fanfiction by Christian Blanco.
 
-It's hosted through Heroku and powered by Node.js. The data comes from what was picked up from watching the series, but also used the [HUngergamestales Wiki](https://hungergamestales.fandom.com/wiki/HUngergamestales_Wiki), [Khen Siapco's tribute list](m/spreadsheets/d/1A4_ryLpuz5rJIEfPzbYad3QqHS_GuGY06Aoz2YskBYo/edit#gid=0), and a few of Solaro's YouTube comments that rank District Hunger Games tributes (including cause of death), to accelerate the corresponding data entry. 
+It's hosted through Heroku and powered by Node.js. The data comes from what was picked up from watching the series, but also used the [HUngergamestales Wiki](https://hungergamestales.fandom.com/wiki/HUngergamestales_Wiki), [Khen Siapco's tribute list](https://docs.google.com/spreadsheets/d/1A4_ryLpuz5rJIEfPzbYad3QqHS_GuGY06Aoz2YskBYo/edit#gid=0), and a few of Solaro's YouTube comments that rank District Hunger Games tributes (including cause of death), to accelerate the corresponding data entry. 
 
 Please note that:
 1. I do not own *The Hunger Games* nor *Tales of the Hunger Games*. They're owned by both Suzanne Collins and Christian Blanco, respectively.
@@ -42,6 +42,7 @@ For example, `api/victor/1` returns:
 "weapon_of_choice": "Weaponry (swords)",
 "known_kills": ["Lilana (11F)", "Bruce (12M)", "Elektra (3F)", "Loom (8F)", "Unmentioned tribute", "Unmentioned tribute", "Unmentioned tribute", "Unmentioned tribute"],
 "nickname": null,
+"training_score": null,
 "is_third_quarter_quell_tribute": false,
 "third_quarter_quell_kills": null,
 "alive_by_third_quarter_quell": false,
@@ -59,14 +60,15 @@ Where:
 * `age` (integer) - the age the Victor won their Hunger Games at.
 * `district` (integer) - the Victor's home district.
 * `sustained_injuries` (string) - any permanent injuries that the Victor sustained that weren't healed for any reason. This value is null if the Victor does not have any of those sustained injuries. 
-* `weapon_of_choice` (string) - the Victor's primary strategy for winning the Hunger Games.
+* `weapon_of_choice` (string) - the Victor's primary strategy for winning the Hunger Games. 
 * `known_kills` (array of strings) - a list of known tributes the Victor killed during their time in the arena. 
 * `nickname` (string) - the Victor's in-universe nickname given by the Capitol or the Districts.
+* `training_score` (int) - the Victor's known training store. This value is `null` if it's not mentioned.
 * `is_third_quarter_quell_tribute` (boolean) - whether the Victor was named tribute for the 75th Hunger Games.
 * `third_quarter_quell_kills` (array of integers) - a list of known tributes (given by their API IDs) the Victor killed during the 75th Hunger Games arena. This value is set to null if the Victor did not participate in the 75th Hunger Games. 
 * `alive_by_third_quarter_quell` (boolean) - whether the Victor was alive by the 3rd Quarter Quell, according to the reaping visuals from Christian's video on the 75th Hunger Games. 
 * `alive_by_the_end_of_mockingjay` (boolan) - whether the Victor was alive by the conclusion of *Mockingjay*. This includes Victors who were in hiding when President Coin made seven Victors vote on whether there should be a Capitol Hunger Games. 
-* `alive_after_the_reclamation"` (boolean) - whether the Victor was alive following the 76th Hunger Games (and to some extent, after Capitol supporters retake Panem). 
+* `alive_after_the_reclamation` (boolean) - whether the Victor was alive following the 76th Hunger Games (and to some extent, after Capitol supporters retake Panem). 
 * `alive_by_the_100th_games` (boolean) - whether the Victor was alive at the time of the 100th Hunger Games's announcement.
 
 ### Get a list of all the District Games Victors
@@ -116,7 +118,7 @@ Where:
 * `height` (integer) - the District Victor's height in inches according to the District Victor spreadsheet Christian provided after each video.
 * `weight` (integer) - the District Victor's weight in pounds according to the District Victor spreadsheet Christian provided after each video.
 * `sustained_injuries` (string) - any permanent injuries that the District Victor sustained that weren't healed for any reason, according to the District Victor spreadsheet Christian provided after each video. This value is null if the District Victor does not have any of those sustained injuries. 
-* `weapon_of_choice` (string) - the Victor's primary strategy for winning the Hunger Games according to the District Victor spreadsheet Christian provided after each video.
+* `weapon_of_choice` (string) - the District Victor's primary strategy for winning the Hunger Games according to the District Victor spreadsheet Christian provided after each video.
 * `nickname` (string) - the Victor's in-universe nickname given by the Capitol or the Districts.
 * `eugenia_assessment_score` (integer between 0-8) - The District Victor's interview score as given by Eugenia Ravinstill.
 * `rubius_assessment_score"` (integer between 0-8) - The District Victor's interview score as given by Rubius Dalton.
