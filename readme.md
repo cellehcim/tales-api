@@ -32,23 +32,27 @@ For example, `api/victor/1` returns:
 
 ```
 {
-"id": 1,
-"first_name": "Cassius",
-"last_name": "Heath",
-"gender": "male",
-"age": 16,
-"district": 2,
-"sustained_injuries": null,
-"weapon_of_choice": "Weaponry (swords)",
-"known_kills": ["Lilana (11F)", "Bruce (12M)", "Elektra (3F)", "Loom (8F)", "Unmentioned tribute", "Unmentioned tribute", "Unmentioned tribute", "Unmentioned tribute"],
-"nickname": null,
-"training_score": null,
-"is_third_quarter_quell_tribute": false,
-"third_quarter_quell_kills": null,
-"alive_by_third_quarter_quell": false,
-"alive_by_the_end_of_mockingjay": false,
-"alive_after_the_reclamation": false,
-"alive_by_the_100th_games": false,
+  "id": 11,
+  "first_name": "Mags",
+  "last_name": "Flanagan",
+  "gender": "female",
+  "age": 16,
+  "district": 4,
+  "sustained_injuries": null,
+  "weapon_of_choice": "Weaponry (fishing rods)",
+  "known_kills": ["Or (1M)"],
+  "nickname": null,
+  "training_score": null,
+  "is_third_quarter_quell_tribute": true,
+  "third_quarter_quell_stats": {
+    "kills": [],
+    "killed_by": "poisonous fog",
+    "place": 15
+    },
+  "alive_by_third_quarter_quell": true,
+  "alive_by_the_end_of_mockingjay": false,
+  "alive_after_the_reclamation": false,
+  "alive_by_the_100th_games": false
 }
 ```
 
@@ -65,7 +69,7 @@ Where:
 * `nickname` (string) - the Victor's in-universe nickname given by the Capitol or the Districts.
 * `training_score` (int) - the Victor's known training store. This value is `null` if it's not mentioned.
 * `is_third_quarter_quell_tribute` (boolean) - whether the Victor was named tribute for the 75th Hunger Games.
-* `third_quarter_quell_kills` (array of integers) - a list of known tributes (given by their API IDs) the Victor killed during the 75th Hunger Games arena. This value is set to null if the Victor did not participate in the 75th Hunger Games. 
+* `third_quarter_quell_stats` (JSON object) - information about the Victor's performance during the 75th Hunger Games including kills (a list of Victor API IDs representing the tributes killed), cause of death (string if by a mutt or arena trap, Victor API ID if by another tribute), and placement (integer). This value is set to null if the Victor did not participate in the 75th Hunger Games. 
 * `alive_by_third_quarter_quell` (boolean) - whether the Victor was alive by the 3rd Quarter Quell, according to the reaping visuals from Christian's video on the 75th Hunger Games. 
 * `alive_by_the_end_of_mockingjay` (boolan) - whether the Victor was alive by the conclusion of *Mockingjay*. This includes Victors who were in hiding when President Coin made seven Victors vote on whether there should be a Capitol Hunger Games. 
 * `alive_after_the_reclamation` (boolean) - whether the Victor was alive following the 76th Hunger Games (and to some extent, after Capitol supporters retake Panem). 
