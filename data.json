@@ -882,8 +882,119 @@
             "alive_by_the_end_of_mockingjay": false,
             "alive_after_the_reclamation": false,
             "alive_by_the_100th_games": false
-        }
+        },
+    "46": {
+        "id": 46,
+        "first_name": "Wiress",
+        "last_name": "Plummer",
+        "gender": "female",
+        "age": 16,
+        "district": 3,
+        "sustained_injuries": "Mental instability",
+        "weapon_of_choice": "Stealth (hiding)",
+        "known_kills": ["Hallie (12F)", "Topaz (1M)"],
+        "nickname": null,
+        "training_score": null,
+        "is_third_quarter_quell_tribute": true,
+        "third_quarter_quell_stats": {
+            "kills": [],
+            "killed_by": 63,
+            "place": 12
+        },
+        "alive_by_third_quarter_quell": true,
+        "alive_by_the_end_of_mockingjay": false,
+        "alive_after_the_reclamation": false,
+        "alive_by_the_100th_games": false
     },
+    "47": {
+        "id": 47,
+        "first_name": "Brutus",
+        "last_name": "Gunn",
+        "gender": "male",
+        "age": 18,
+        "district": 2,
+        "sustained_injuries": null,
+        "weapon_of_choice": "Weaponry (various)",
+        "known_kills": ["Azure (8)", "Unmentioned tribute", "Unmentioned tribute", "Unmentioned tribute", "Unmentioned tribute", "Basil (12M)", "Calista (7F)", "Gaia (2F)", "Agate (1F)", "Malachite (1M)", "Virgina (6F)"],
+        "nickname": null,
+        "training_score": null,
+        "is_third_quarter_quell_tribute": true,
+        "third_quarter_quell_stats": {
+            "kills": [16, 40, 45],
+            "killed_by": 74,
+            "place": 7
+        },
+        "alive_by_third_quarter_quell": true,
+        "alive_by_the_end_of_mockingjay": false,
+        "alive_after_the_reclamation": false,
+        "alive_by_the_100th_games": false
+    },
+    "48": {
+        "id": 48,
+        "first_name": "Blight",
+        "last_name": "Jordan",
+        "gender": "male",
+        "age": 18,
+        "district": 7,
+        "sustained_injuries": null,
+        "weapon_of_choice": "Weaponry (chisels)",
+        "known_kills": ["June (12F)", "Dixie (11F)"],
+        "nickname": null,
+        "training_score": null,
+        "is_third_quarter_quell_tribute": true,
+        "third_quarter_quell_stats": {
+            "kills": [],
+            "killed_by": "running into the forcefield",
+            "place": 16
+        },
+        "alive_by_third_quarter_quell": true,
+        "alive_by_the_end_of_mockingjay": false,
+        "alive_after_the_reclamation": false,
+        "alive_by_the_100th_games": false
+    },
+    "49": {
+        "id": 49,
+        "first_name": "James",
+        "last_name": "Logan",
+        "gender": "male",
+        "age": 16,
+        "district": 5,
+        "sustained_injuries": null,
+        "weapon_of_choice": "Weaponry (bees)",
+        "known_kills": ["Batri (3M)", "Agnes (12F)", "Unmentioned tribute", "Unmentioned tribute", "Unmentioned tribute", "Unmentioned tribute", "Unmentioned tribute", "Unmentioned tribute", "Unmentioned tribute", "Rex (2M)"],
+        "nickname": null,
+        "training_score": null,
+        "is_third_quarter_quell_tribute": true,
+        "third_quarter_quell_stats": {
+            "kills": [],
+            "killed_by": 65,
+            "place": 24
+        },
+        "alive_by_third_quarter_quell": true,
+        "alive_by_the_end_of_mockingjay": false,
+        "alive_after_the_reclamation": false,
+        "alive_by_the_100th_games": false
+    },
+    "50": {
+        "id": 50,
+        "first_name": "Haymitch",
+        "last_name": "Abernathy",
+        "gender": "male",
+        "age": 16,
+        "district": 12,
+        "sustained_injuries": null,
+        "weapon_of_choice": "Various",
+        "known_kills": ["Severus Galloway (2M)", "Icarus (2M)", "Opal (1F)"],
+        "nickname": null,
+        "training_score": null,
+        "is_third_quarter_quell_tribute": false,
+        "third_quarter_quell_stats": null,
+        "alive_by_third_quarter_quell": true,
+        "alive_by_the_end_of_mockingjay": true,
+        "alive_after_the_reclamation": false,
+        "alive_by_the_100th_games": false
+    }
+},
     "district_victors": {
         "1m": {
             "id": "1m",
