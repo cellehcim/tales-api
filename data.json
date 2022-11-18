@@ -1195,6 +1195,75 @@
         "alive_by_the_end_of_mockingjay": false,
         "alive_after_the_reclamation": false,
         "alive_by_the_100th_games": false
+    },
+    "61": {
+        "id": 61,
+        "first_name": "Justin",
+        "last_name": "Hix",
+        "gender": "male",
+        "age": 16,
+        "district": 6,
+        "sustained_injuries": null,
+        "weapon_of_choice": "Stealth (hiding)",
+        "known_kills": ["Clearfall (9M)"],
+        "nickname": null,
+        "training_score": null,
+        "is_third_quarter_quell_tribute": true,
+        "third_quarter_quell_stats": {
+            "kills": [],
+            "killed_by": 62,
+            "place": 19
+        },        
+        "alive_by_third_quarter_quell": true,
+        "alive_by_the_end_of_mockingjay": false,
+        "alive_after_the_reclamation": false,
+        "alive_by_the_100th_games": false
+    },
+    "62": {
+        "id": 62,
+        "first_name": "Enobaria",
+        "last_name": "Golding",
+        "gender": "female",
+        "age": 17,
+        "district": 2,
+        "sustained_injuries": null,
+        "weapon_of_choice": "Weaponry (various)",
+        "known_kills": ["Turbo (5M)", "Tamarix (7M)", "Solara (5F)", "Fax (3M)", "Jen (9M)", "Antoine (11M)"],
+        "nickname": null,
+        "training_score": null,
+        "is_third_quarter_quell_tribute": true,
+        "third_quarter_quell_stats": {
+            "kills": [60, 69],
+            "killed_by": null,
+            "place": 6
+        },        
+        "alive_by_third_quarter_quell": true,
+        "alive_by_the_end_of_mockingjay": false,
+        "alive_after_the_reclamation": false,
+        "alive_by_the_100th_games": false
+    },
+    "63": {
+        "id": 63,
+        "first_name": "Gloss",
+        "last_name": "Ritschlund",
+        "gender": "female",
+        "age": 18,
+        "district": 1,
+        "sustained_injuries": null,
+        "weapon_of_choice": "Weaponry (swords)",
+        "known_kills": ["Ashin (7M)", "Lacie (8F)", "Cuth (5M)", "Austin (6M)", "Dmitri (10M)", "Michigan (6F)", "Larima (1F)", "Albus (2M)"],
+        "nickname": null,
+        "training_score": null,
+        "is_third_quarter_quell_tribute": true,
+        "third_quarter_quell_stats": {
+            "kills": [61, 46],
+            "killed_by": 74,
+            "place": 19
+        },        
+        "alive_by_third_quarter_quell": true,
+        "alive_by_the_end_of_mockingjay": false,
+        "alive_after_the_reclamation": false,
+        "alive_by_the_100th_games": false
     }
 },
     "district_victors": {
