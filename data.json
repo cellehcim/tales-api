@@ -1258,7 +1258,76 @@
         "third_quarter_quell_stats": {
             "kills": [61, 46],
             "killed_by": 74,
-            "place": 19
+            "place": 11
+        },        
+        "alive_by_third_quarter_quell": true,
+        "alive_by_the_end_of_mockingjay": false,
+        "alive_after_the_reclamation": false,
+        "alive_by_the_100th_games": false
+    },
+    "64": {
+        "id": 64,
+        "first_name": "Cashmere",
+        "last_name": "Ritschlund",
+        "gender": "female",
+        "age": 17,
+        "district": 1,
+        "sustained_injuries": null,
+        "weapon_of_choice": "Weaponry (knives)",
+        "known_kills": ["Robin (10M)", "Jeenee (6F)", "Twitch (3F)", "Timbo (7M)", "Diana (2F)"],
+        "nickname": null,
+        "training_score": 9,
+        "is_third_quarter_quell_tribute": true,
+        "third_quarter_quell_stats": {
+            "kills": [33],
+            "killed_by": 71,
+            "place": 10
+        },        
+        "alive_by_third_quarter_quell": true,
+        "alive_by_the_end_of_mockingjay": false,
+        "alive_after_the_reclamation": false,
+        "alive_by_the_100th_games": false
+    },
+    "65": {
+        "id": 65,
+        "first_name": "Finnick",
+        "last_name": "Odair",
+        "gender": "male",
+        "age": 14,
+        "district": 4,
+        "sustained_injuries": null,
+        "weapon_of_choice": "Weaponry (tridents)",
+        "known_kills": ["Raymundo (10M)", "Lucelle (3F)", "Feller (9M)", "Groucho (12M)", "Dolora (10F)", "Glistena (1F)", "Elaeis (1M)", "Tiberius (2M)", "Adella (6F)"],
+        "nickname": null,
+        "training_score": 8,
+        "is_third_quarter_quell_tribute": true,
+        "third_quarter_quell_stats": {
+            "kills": [49],
+            "killed_by": null,
+            "place": 6
+        },        
+        "alive_by_third_quarter_quell": true,
+        "alive_by_the_end_of_mockingjay": false,
+        "alive_after_the_reclamation": false,
+        "alive_by_the_100th_games": false
+    },
+    "66": {
+        "id": 66,
+        "first_name": "Jackson",
+        "last_name": "Spidell",
+        "gender": "male",
+        "age": 18,
+        "district": 10,
+        "sustained_injuries": null,
+        "weapon_of_choice": "Weaponry (scythes)",
+        "known_kills": ["Nucleo (5M)", "Laverne (2M)", "Clara (12F)"],
+        "nickname": null,
+        "training_score": 5,
+        "is_third_quarter_quell_tribute": true,
+        "third_quarter_quell_stats": {
+            "kills": [],
+            "killed_by": "monster mutt",
+            "place": 9
         },        
         "alive_by_third_quarter_quell": true,
         "alive_by_the_end_of_mockingjay": false,
