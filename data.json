@@ -1394,6 +1394,25 @@
         "alive_by_the_end_of_mockingjay": false,
         "alive_after_the_reclamation": false,
         "alive_by_the_100th_games": false
+    },
+    "70": {
+        "id": 70,
+        "first_name": "Annie",
+        "last_name": "Cresta",
+        "gender": "female",
+        "age": 18,
+        "district": 4,
+        "sustained_injuries": "Mental instability",
+        "weapon_of_choice": "Diplomacy",
+        "known_kills": ["Gladius (2M)"],
+        "nickname": null,
+        "training_score": 5,
+        "is_third_quarter_quell_tribute": false,   
+        "third_quarter_quell_stats": null,  
+        "alive_by_third_quarter_quell": true,
+        "alive_by_the_end_of_mockingjay": true,
+        "alive_after_the_reclamation": true,
+        "alive_by_the_100th_games": true
     }
 },
     "district_victors": {
