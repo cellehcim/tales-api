@@ -852,7 +852,7 @@
             "is_third_quarter_quell_tribute": true,
             "third_quarter_quell_stats": {
                 "kills": [],
-                "killed_by": 74,
+                "killed_by": 75,
                 "place": 21
             },
             "alive_by_third_quarter_quell": true,
@@ -921,7 +921,7 @@
         "is_third_quarter_quell_tribute": true,
         "third_quarter_quell_stats": {
             "kills": [16, 40, 45],
-            "killed_by": 74,
+            "killed_by": 75,
             "place": 7
         },
         "alive_by_third_quarter_quell": true,
@@ -1472,6 +1472,52 @@
         "third_quarter_quell_stats": null,  
         "alive_by_third_quarter_quell": true,
         "alive_by_the_end_of_mockingjay": false,
+        "alive_after_the_reclamation": false,
+        "alive_by_the_100th_games": false
+    },
+    "74a": {
+        "id": 74,
+        "first_name": "Katniss",
+        "last_name": "Everdeen",
+        "gender": "female",
+        "age": 16,
+        "district": 12,
+        "sustained_injuries": null,
+        "weapon_of_choice": "Weaponry (arrows)",
+        "known_kills": ["Glimmer (1F)", "Marvel (1M)", "Cato (2M)"],
+        "nickname": null,
+        "training_score": 11,
+        "is_third_quarter_quell_tribute": true,   
+        "third_quarter_quell_stats": {
+            "kills": [63],
+            "killed_by": null,
+            "place": 6
+        }, 
+        "alive_by_third_quarter_quell": true,
+        "alive_by_the_end_of_mockingjay": true,
+        "alive_after_the_reclamation": false,
+        "alive_by_the_100th_games": false
+    },
+    "74b": {
+        "id": 75,
+        "first_name": "Peeta",
+        "last_name": "Mellark",
+        "gender": "male",
+        "age": 16,
+        "district": 12,
+        "sustained_injuries": "Lost use of his leg",
+        "weapon_of_choice": "Diplomacy",
+        "known_kills": ["Mackenzie (8F)"],
+        "nickname": null,
+        "training_score": 8,
+        "is_third_quarter_quell_tribute": true,   
+        "third_quarter_quell_stats": {
+            "kills": [44, 47],
+            "killed_by": null,
+            "place": 6
+        }, 
+        "alive_by_third_quarter_quell": true,
+        "alive_by_the_end_of_mockingjay": true,
         "alive_after_the_reclamation": false,
         "alive_by_the_100th_games": false
     }
